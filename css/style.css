@@ -1,0 +1,520 @@
+/**
+*
+*style.css for page index.html and share.html
+*@webuffer
+*set up:2014/7/12
+*last change:2014/7/14
+*
+*/
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	background-color: #efefef;
+}
+.clear{
+	clear: both;
+}
+.header{
+	width: 100%;
+	height: 0px;
+}
+.content{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.icon-expression,.icon-add-image,.icon-location,.icon-location-c,.icon-prev,.icon-more-operate,
+.icon-write,.icon-delete,.icon-bg,.icon-logo,.icon-topic,.icon-user,.icon-bullhorn,
+.icon-chevron-right,.icon-chevron-down,.icon-zan,.icon-share,.icon-comment,.icon-scroll-top{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	background: url("../images/sprite.png") no-repeat;
+}
+/*** 页脚固定栏 ***/
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	border-top: 1px solid #e2e2e2;
+	background-color: #f9f9f9;
+}
+/*** 固定页脚左侧栏 ***/
+.prev{
+	float: left;
+	margin-top: 5px;
+	width: 45px;
+	height: 40px;
+	border-right: 1px solid #d4d4d4;
+	text-align: center;
+}
+.icon-prev{
+	margin-top: 11px;
+	background-position: 0 -45px;  
+	width: 11px;
+	height: 18px;	
+}
+/*** 固定页脚右侧栏 ***/
+.more-operate{
+	float: right;
+	margin-top: 5px;
+	width: 45px;
+	height: 40px;
+	border-left: 1px solid #d4d4d4;
+	text-align: center;
+}
+.icon-more-operate{
+	margin-top: 11px;
+	background-position: -15px -45px;  
+	width: 18px;
+	height: 18px;
+}
+/*** 固定页脚中间栏 ***/
+.footer-center{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	margin-top: 17px;
+	text-decoration: none;
+	font-size: 15px;
+}
+.icon-write{
+	margin-bottom: -3px;
+	margin-right: 3px;
+	background-position: -62px 0;
+	width: 18px;
+	height: 18px;
+}
+/***************************************  
+* 发表话题 share.html
+****************************************/
+.post-text{
+	padding-top: 10px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e2e2e2;
+}
+.post-textarea{
+	display: block;
+	margin: 0 auto;
+	resize: none;
+	width: 92%;
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	background-color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.post-operation{
+	margin: 10px auto;
+	overflow: hidden;
+	width: 93%;
+}
+/*** 输入框操作栏左侧 ***/
+.operation-left{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.icon-expression{
+	background-position: -26px -66px; 
+	width: 23px;
+	height: 23px;
+}
+/*** 输入框操作栏右侧 ***/
+.operation-right{
+	float: right;
+}
+.btn{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 60px;
+	height: 30px;
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+}
+.btn-default{
+	color: #595858;
+	background-color: #fbfbfb;
+	border: 1px solid #c5c8cb;
+}
+.btn-success{
+	color: #ecf5df;
+	background-color: #7ebd21;
+	border: 1px solid #538d00;
+}
+.upload{
+	margin: 12px auto;
+	width: 92%;
+}
+.upload ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.upload ul li{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	margin-right: 8px;
+	width: 61px;
+	height: 61px;
+}
+/*** 输入框下侧的上传栏，包括图片上传和地理位置 ***/
+.upload ul li img{
+	width: 61px;
+	height: 61px;
+	border: 0;
+}
+/*** 图片右侧上方的删除角标 ***/
+.delete{
+	position: relative;
+	top: -72px;
+	left: 50px;
+}
+.icon-delete{
+	background-position: 0 -66px;	
+	width: 22px;
+	height: 22px;
+}
+/*** 添加图片 ***/
+.add-image{
+	position: relative;
+	top: -24px;
+}
+.add-image a{
+	display: block;
+	width: 61px;
+	height: 61px;
+}
+.icon-add-image{
+	background-position: -101px 0;
+	width: 61px;
+	height: 61px;
+}
+/*** 上传图片限制信息 ***/
+.tip{
+	margin-top: -10px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #8c908c;
+}
+/*** 地理地址 ***/
+.location-c{
+	font-size: 14px;
+	text-decoration: none;
+	color: #a3c86f;
+}
+.icon-location-c{
+	margin-right: 3px;
+	margin-bottom: -3px;
+	background-position: -70px -20px;
+	width: 12px;
+	height: 15px;
+}
+/*** 背景图片，精彩在你身边 ***/
+.bg{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	width: 100%;
+	height: 18px;
+	text-align: center;
+}
+.icon-bg{
+	background-position: -62px -98px;  
+	width: 162px;
+	height: 18px;	
+}
+/***************************************  
+* 主页 index.html
+****************************************/
+/*** 页面上方统计信息 ***/
+.top-total{
+	overflow: hidden;	
+	width: 100%;
+	height: 80px;
+	background-color: #fff;
+}
+.logo{
+	float: left;
+	width: 25%;
+	height: 80px;
+	text-align: center;
+}
+.icon-logo{
+	margin-top: 24px;
+	background-position: 0 -98px;  
+	width: 58px;
+	height: 31px;
+}
+/*** logo右侧详细信息 ***/
+.logo-details{
+	float: right;
+	width: 75%;
+}
+.logo-details h1{
+	margin-left: 5px;
+	margin-top: 15px;
+	font-size: 15px;
+}
+.logo-details ul{
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+	list-style-type: none;
+}
+.logo-details ul li{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	font-size: 13px;
+}
+.icon-topic{
+	margin-bottom: -4px;
+	margin-right: 4px;
+	background-position: -25px -20px;
+	width: 18px;
+	height: 19px;
+}
+.icon-user{
+	margin-bottom: -4px;
+	margin-right: 4px;
+	background-position: -47px -20px;	
+	width: 19px;
+	height: 19px;
+}
+/*** 广告插图 ***/
+.ad img{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.ad span{
+	float: right;
+	position: relative;
+	margin-top: -32px;
+	margin-right: 7px;
+	display: block;
+	color: #0b3c05;
+	font-size: 14px;
+	font-weight: bold;
+}
+/*** 内容卡片 ***/
+.card{
+	margin: 10px auto;
+	padding-top: 10px;
+	width: 92%;
+	height: auto;
+	background-color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 5px #d9d9d9;
+	-moz-box-shadow: 1px 1px 5px #d9d9d9;
+	box-shadow: 1px 1px 5px #d9d9d9;
+}
+/*** 社区提示信息 ***/
+.alert-news{
+	padding-bottom: 10px;
+}
+.alert-news a{
+	text-decoration: none;
+}
+/*** 喇叭图标 ***/
+.icon-bullhorn{
+	margin: 0 8px -5px 10px;
+	background-position: 0 -20px;
+	width: 21px;
+	height: 21px;
+}
+.icon-chevron-right{
+	float: right;
+	margin-top: 3px;
+	margin-right: 10px;
+	background-position: -36px -45px;	
+	width: 8px;
+	height: 15px;
+}
+/*** 动态信息 ***/
+.news-content{
+	padding: 10px 0;
+	margin: 0 auto;
+	width: 92%;
+	font-size: 13px;
+	text-align: right;
+	border-top: 1px solid #f0f0f0;
+}
+/*** 内容卡详细设计 ***/
+.card > header{
+	overflow: hidden;
+	width: 100%;
+}
+.card:last-child{
+	margin-bottom: 60px;
+}
+.face{
+	float: left;
+	width: 20%;
+	height: 39px;
+}
+/*** 头像 ***/
+.face img{
+	margin-left: 10px;
+	width: 39px;
+	height: 39px;
+	border: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.post-meta{
+	float: right;
+	top: 0;
+	width: 80%;
+}
+.post-meta h1{
+	margin-top: 3px;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+.post-meta ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 13px;
+}
+.post-meta ul li{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+/*** 卡片中的地理地址 ***/
+.icon-location{
+	margin: 0 4px -3px 15px;
+	background-position: -86px -20px;	
+	width: 11px;
+	height: 14px;
+}
+.card-down{
+	position: relative;
+	top: -40px;
+	right: 10px;
+	width: 100%;
+	text-align: right;
+}
+/*** 向下的箭头 ***/
+.icon-chevron-down{
+	background-position: -48px -45px;	
+	width: 14px;
+	height: 9px;
+}
+.post-content p{
+	margin-top: 0;
+	padding: 0 10px 10px 10px;
+	line-height: 23px;
+}
+/*** 热门提示 ***/
+.hot{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	padding: 2px 5px;	
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #ffa200;
+	color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.post-operate{
+	margin-top: -10px;
+	padding-right: 12px;
+	padding-bottom: 12px;
+	text-align: right;
+}
+.post-operate a{
+	text-decoration: none;
+	font-size: 13px;
+}
+.icon-zan{
+	margin-bottom: -3px;
+	margin-right: 4px;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+}
+.icon-share{
+	margin: 0 4px -3px 5px;
+	background-position: -20px 0;	
+	width: 17px;
+	height: 16px;
+}
+.icon-comment{
+	margin: 0 4px -3px 5px;
+	background-position: -41px 0;
+	width: 17px;
+	height: 16px;
+}
+/*** 评论列表 ***/
+.post-comment{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	border-top: 1px solid #ebebeb;
+}
+.post-comment ul{
+	margin: 0;
+	padding-left: 10px;
+	list-style-type: none;
+}
+.comment-item{
+	font-size: 14px;
+	line-height: 25px;
+}
+.writer{
+	padding-right: 0;
+	margin-right: 0;
+	text-decoration: none;
+}
+.post-image-two,.post-image-four{
+	margin: -10px 0 25px 10px;
+	list-style-type: none;
+	padding: 0;
+}
+.post-image-two li,.post-image-four li{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	margin-bottom: 5px;
+}
+/*** 更多回复 ***/
+.more-comment{
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 92%;
+	border-top: 1px solid #ebebeb;
+	font-size: 13px;
+}
+.more-comment a{
+	margin-left: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+	font-size: 14px;
+}
+/*** 返回顶部 ***/
+.scroll-top{
+	position: fixed;
+	bottom: 60px;
+	right: 18px;
+}
+.icon-scroll-top{
+	background-position: -166px 0;  
+	width: 41px;
+	height: 41px;
+}
